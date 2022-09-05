@@ -7,8 +7,17 @@
 
     <title>Frontend Mentor | Challenge List</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel='preload' as="style" id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Outfit%3A400%2C700&#038;ver=3.0.0&#038;display=swap' type='text/css' onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript>
+      <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Outfit%3A400%2C700&#038;ver=3.0.0&#038;display=swap' type='text/css' media='all'/>
+    </noscript>
     <style>
+      /*
+      - White: hsl(0, 0%, 100%)
+      - Light gray: hsl(212, 45%, 89%)
+      - Grayish blue: hsl(220, 15%, 55%)
+      - Dark blue: hsl(218, 44%, 22%)
+      */
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -16,16 +25,58 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      body {
+        font-family: Outfit;
+        background-color: hsl(212, 45%, 89%);
+        box-sizing: border-box;
+      }
+      .panel {
+        width: 306px;
+        height: 497px;
+        margin: 5rem auto;
+        background-color: hsl(0, 0%, 100%);
+        padding: 1rem;
+        border-radius: 1.5rem;
+        border: 2rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        height: 306px;
+        border-radius: 1rem;
+        border: 2rem;
+        object-fit: contain;
+      }
+      .copy {
+        margin: 2rem 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        color: hsl(0, 0%, 0%);
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+      }
+      ol {
+        padding-left: 0;
+      }
     </style>
   </head>
   <body>
 
-    <p>Improve your front-end skills by building projects</p>
-    <ol>
-      <li>
-        <a href="/1-qr-code-component-main">QR code component</a>
-      </li>
-    </ol>
+    <div class="panel">
+      <div class="copy">
+        <h1>Improving my front-end skills by building projects</h1>
+        <ol>
+          <li>
+            <a href="/1-qr-code-component-main">QR code component</a>
+          </li>
+        </ol>
+      </div>
+    </div>
 
     <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
